@@ -7,12 +7,13 @@ app.use(cors());
 app.use(bodyParser.json());
 
 let todos = [
-    { id: 1, text: 'Cras justo odio', completed: true, category: 'work' },
-    { id: 2, text: 'Dapibus ac facilisis in', completed: true, category: 'personal' },
-    { id: 3, text: 'Morbi leo risus', completed: false, category: 'work' },
-    { id: 4, text: 'Porta ac consectetur ac', completed: false, category: 'personal' },
-    { id: 5, text: 'Vestibulum at eros', completed: false, category: 'work' },
+    { id: 1, text: 'Complete project proposal', completed: true, category: 'work' },
+    { id: 2, text: 'Buy groceries for the week', completed: false, category: 'personal' },
+    { id: 3, text: 'Prepare presentation slides', completed: true, category: 'work' },
+    { id: 4, text: 'Call the insurance company', completed: false, category: 'personal' },
+    { id: 5, text: 'Plan family dinner', completed: false, category: 'personal' },
 ];
+
 
 let categories = ['work', 'personal', 'Uncategorized'];
 

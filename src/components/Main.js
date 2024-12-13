@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TodoCard from './TodoCard';
 import TodoForm from './TodoForm';
-
+import ProgressBar from './ProgressBar'; 
 import {
   fetchTodos,
   fetchCategories,
@@ -75,6 +75,9 @@ const Main = () => {
     }
     return filteredTasks;
   };
+
+  const completedTasksCount = tasks.filter((task) => task.completed).length;
+  const totalTasksCount = tasks.length;
 
   return (
     <section className="vh-100 gradient-custom">
@@ -164,7 +167,7 @@ const Main = () => {
             />
           </div>
         )}
-
+        <ProgressBar completed={completedTasksCount} total={totalTasksCount}/>
         <ul className="list-group mb-0">
           {getFilteredTasks().map((task) => (
             <TodoCard
