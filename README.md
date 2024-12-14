@@ -8,6 +8,9 @@ A Todo List application built with React and Node.js, designed to efficiently ma
 
 1. **Start the Application**
    - Run the following command in the root directory:
+        ```bash
+     npm install
+     ```
      ```bash
      npm start
      ```
